@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<title>Contact Form</title>
+<meta charset="utf-8"> 
+<style>
+form { background-color:#eaeaea;
+	   font-family: Arial, sans-serif;
+       padding: 10px; }
+label { float: left;
+	    width: 100px; 
+        clear: left;
+	    text-align: right; 
+	    padding-right: 10px;
+	    margin-top: 10px; }
+input, textarea { margin-top: 10px; 
+                  display: block; } 
+#mySubmit { margin-left: 110px; }
+.fieldset {
+  width: 320px;
+  border: 2px ridge #ff0000;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+legend {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-right: 10px;
+  width: fit-content;
+  background-color: #eaeaea;
+}
+label {
+  font-family: Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+<h1>Contact Us</h1>
+<form>
+  <div class="fieldset">
+  <legend>Customer Information</legend>
+  <label for="firstName">First Name:</label>
+  <input type="text" name="firstName" id="firstName">
+  <label for="lastName">Last Name:</label>
+  <input type="text" name="lastName" id="lastName">
+  <label for="myEmail">E-mail:</label>
+  <input type="text" name="myEmail" id="myEmail">
+  </div>
+  Comments:
+  <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+  <input style="margin-left: 0px; display: inline-block;" id="mySubmit" type="submit" value="Contact"> <input style="margin-left: 0px; display: inline-block;" id="mySubmit" type="reset" value="Reset">
+</form>
+</body>
+</html>
